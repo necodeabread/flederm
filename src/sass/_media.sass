@@ -1,0 +1,167 @@
+
+@media( max-width: 10000px )
+    .menu
+        list-style: none
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 5
+        background-color: $main_color_light
+        width: 100%
+        &_logo
+            margin-left: 300px
+        &_item
+            font-size: 22px
+            padding-top: 18px
+            &:last-child
+                margin-right: 320px
+                a
+                    border: none
+            a
+                text-decoration: none
+                border-right: 2px dotted $main_color
+                padding-right: 30px
+                padding-left: 6px
+                color: $main_color
+                transition: 0.6s all
+                &:hover
+                    color: violet
+                
+    .fixed_header
+        background-size: cover
+        height: 350px  
+        width: 70%
+        margin: 0 auto
+        margin-top: 80px 
+
+@media( max-width: 1200px )
+    .menu
+        &_logo
+            margin-left: 0
+        &_item
+            font-size: 22px
+            padding-top: 18px
+            &:last-child
+                margin-right: 0
+            a
+                text-decoration: none
+                border-right: 2px dotted $main_color
+                padding-right: 30px
+                padding-left: 6px
+                color: $main_color
+    .fixed_header
+        height: 320px
+
+    
+
+@media (max-width: 1023px)
+    .fixed_header
+        height: 230px
+        margin-top: 80px
+        // background: url('../img/bg_header.jpeg') center center/cover no-repeat
+    .menu
+        &_item
+            font-size: 20px
+            a
+                padding-right: 8px
+                padding-left: 6px
+
+
+@media( max-width: 575px ) 
+    .fixed_header
+        height: 150px
+        width: 70%
+    .menu
+        position: fixed
+        top: -93%
+        display: flex
+        flex-direction: column
+        height: 100%
+        width: 100%
+        transition: 0.6s all
+        list-style-type: none 
+        background-color: white
+        z-index: 5
+        border-bottom: 2px solid $main_color
+        &_active
+            top: 0
+            left: 0
+        &_item
+            text-align: center
+            padding: 20px 0
+            text-transform: uppercase
+            margin-left: 0
+            margin-bottom: 10px
+            width: 100%
+            color: rgb(0, 0, 0)
+            font-weight: 700
+            font-size: 24px
+            transform: translateX(-16px)
+            &:first-child
+                margin-top: 10px
+            a
+                text-decoration: none
+                color: black
+                border: none
+        &_logo
+            height: 50px
+            width: 50px
+            padding: 30px 0
+            margin: 0 auto
+            transform: translateX(-50%)
+            margin-bottom: 50px
+
+    .hamburger
+        position: fixed
+        top: 14px
+        right: 14px
+        width: 30px
+        height: 20px
+        display: block
+        z-index: 6
+        span
+            background-color: #000
+            height: 4px
+            width: 100%
+            display: block
+            margin: 4px 0
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -7px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+
+    
+
+@media( max-width: 374px )
+    .fixed_header
+        width: 80%
+    .hamburger
+        top: 10px
+        
+
+@media( max-width: 320px )
+    .hamburger
+        top: 6px
+        right: 10px
+    .contacts
+        font-size: 16px
+    
+
+
+
+
+
+
+
+
+    
+    

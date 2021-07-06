@@ -1,0 +1,184 @@
+
+header
+    min-height: 100px
+
+.fixed_header
+    height: 100px
+    background: url('../img/better_logo_header.jpg') center center/cover no-repeat
+    margin-top: 70px
+
+.promo
+    &_header
+        text-align: center
+    h2
+        text-align: center
+
+.promo
+    &_descr
+        text-align: center
+    &_header
+        font-family: Russo, sans-serif
+
+.logo
+    width: 70px
+    height: 70px
+    margin: 0 auto
+    // transform: translateX(-25%)
+    margin-bottom: 15px
+    background: url("../icons/logo_final_70x70.png") center center/cover no-repeat
+
+.news
+    min-height: 200px
+    margin-bottom: 30px
+
+.coaches
+    &_persons
+        min-height: 200px
+        margin-bottom: 20px
+        &_kate            
+            &_photo
+                margin-top: 20px
+                height: 200px
+                background: url('../img/image_placeholder.jpg') center center/contain no-repeat
+            &_textwrapper
+                display: block
+                border: 2px dashed $main_color
+                border-radius: 8px
+                background-color: $main_color_light 
+                &_header
+                    text-align: center
+                    font-size: 24px
+                    text-transform: uppercase
+                    color: $main_color
+                    font-weight: 700
+                &_descr
+                    text-align: center
+                    font-size: 18px
+                    color: $main_color
+                    
+
+.label
+    width: 150px
+    min-height: 50px
+    background-color: $main_color_light
+    border: solid 2px $main_color
+    border-radius: 8px 
+    text-align: center
+    margin: 0 auto
+    padding-top: 7px
+    &_text
+        font-size: 20px  
+        font-weight: 700
+        color: $main_color  
+
+.meso, .botulo, .plastics
+    min-height: 200px
+    padding-top: 30px
+    width: 100%
+    &_image
+        height: 250px
+        border-radius: 8px
+    &_text
+        width: 100%
+        display: flex
+        justify-content: center
+        flex-flow: column
+        margin-top: 10px
+        background-color: $main_color_light
+        border: $main_color 2px ridge 
+        border-radius: 8px
+        min-height: 40px
+        position: relative
+        &:hover
+            cursor: pointer    
+        &_header
+            text-transform: uppercase
+            font-size: 18px
+            color: $main_color
+            text-shadow: 0 0 8px $main_color
+            font-weight: 400
+            font-family: Russo, sans-serif
+            margin: auto
+            padding-top: 4px
+        &_descr
+            color: $main_color
+            text-align: center
+            max-height: 0
+            overflow: hidden
+            transition: max-height 0.5s ease-out
+
+.meso
+    &_image
+        background: url("../img/meso_bg_X_shaded.png") center center/cover no-repeat
+
+.botulo
+    &_image
+        background: url("../img/botoks.jpg") center center/cover no-repeat
+
+.plastics
+    &_image
+        background: url("../img/kontur-plastika.jpg") center center/cover no-repeat
+
+.coaches
+    min-height: 500px
+
+.wider
+    width: 170px
+
+
+.open
+    display: block
+    max-height: 200px
+
+.feedback
+    margin-top: 30px
+    min-height: 200px
+
+.models
+    margin-top: 30px
+    margin-bottom: 30px
+    min-height: 200px
+    
+footer
+    min-height: 70px
+    background-color: $main_color_light
+    
+
+.divider
+    width: 200px
+    height: 4px
+    background-color: $main_color
+    margin: 0 auto
+
+.wrapper
+    height: 100px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.social
+    width: 55px
+    height: 55px
+    font-size: 45px  
+    text-align: center
+    a
+        color: black
+        &:hover
+            color: $main_color
+
+.call
+    width: 50px
+    height: 50px
+    font-size: 42px  
+    text-align: center
+    a
+        color: black
+        &:hover
+            color: $main_color
+
+.contacts
+    text-transform: uppercase
+    font-size: 20px
+    color: black
+    padding-top: 10px
+    text-align: center
